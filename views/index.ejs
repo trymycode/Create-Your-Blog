@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<div class="ui main text container ">
+        <div class="ui huge header"> <h1>Restful Blog App</h1> </div>
+        <div class="ui top attached segment">
+                <div class="ui divided items">
+                     <% blogs.forEach(function(blog){ %>
+                                <div class="content"><a class="ui header" href="/blogs/<%= blog._id %>"><%=blog.Title %></a></div>
+                                <div class="image imageForEdit"><img src="<%= blog.Image %>"></div>
+                                
+                                <div class="meta"><span id="editDate"><%= blog.Created.toDateString() %></span> </div>
+                                <div class="description"><p><%- blog.body.substring(0,80) %>...</p></div>
+                                <div class="extra" id="readmore"> <a class="ui floated basic black  button" href="/blogs/<%= blog._id %>">Read more
+                                <i class="right chevron icon"></i></a>  </div>
+                               
+                            
+                        <% }) %>
+                </div>
+        </div>
+        
+</div>
+<% include ./partials/footer %>

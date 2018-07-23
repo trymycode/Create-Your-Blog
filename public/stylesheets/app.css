@@ -1,0 +1,38 @@
+body{
+  background-color: rgba(230, 236, 237, 0.5);
+}
+i.icon {
+  font-size: 2em;  
+}
+
+.container.main{
+  margin: 5em;
+}
+
+.delete{
+  display: inline-block;
+}
+#readmore{
+  margin: 1em auto;
+}
+
+.imageForEdit img{
+  width: 150px;
+  height: 150px;
+  border: 3px solid #5b5f66;
+  box-sizing: border-box;
+  margin: 1em;
+}
+ .extra{
+   padding-bottom: 1em;
+  border-bottom: 2px solid #a7abb2;
+}
+.buttonForEdit{
+  margin: 1em 0;
+}
+.meta #editDate{
+  padding-left: 2em;
+}
+.content #editDate{
+  padding-left: 42%;
+}
